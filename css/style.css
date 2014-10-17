@@ -1,3 +1,7 @@
+---
+---
+
+
 body {
 	font-family: "Roboto-Thin", Helvetica-Neue, Helvetica, sans;
 	font-weight: 100;
@@ -134,10 +138,30 @@ nav ul li a:hover
 	font-size: .75em;
 	padding: 0 0 12px 8px;
 }
+/*--------------------------------------------------------
+
+						Article
+
+----------------------------------------------------------*/
+
+.full-bg{
+	position: fixed;
+	margin: 0 auto;
+	max-width: 100%;
+	
+}
+
 .post-content {
 	margin: 0 auto;
 	max-width: 960px;
+
 }
+
+/*--------------------------------------------------------
+
+						FOOTER
+
+----------------------------------------------------------*/
 
 footer {
 	position: relative;
