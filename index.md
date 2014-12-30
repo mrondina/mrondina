@@ -1,4 +1,4 @@
 ---
 title: Hello World!
-layout: default
+layout: blog-toc
 ---
