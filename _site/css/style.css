@@ -3,6 +3,7 @@
 		 		FONTS
 
 -------------------------------------*/
+/** { outline: 2px dotted red }*/
 @font-face {
   font-family: "League Spartan";
   src: url("fonts/leaguespartan-bold.woff2") format("woff2"), url("fonts/leaguespartan-bold.woff") format("woff"), url("fonts/leaguespartan-bold.ttf") format("truetype"); }
@@ -10,35 +11,33 @@ body {
   margin: 0 auto;
   padding: 0;
   font-size: 1rem;
-  font-family: 'Lora', 'Times', serif;
-  font-weight: 400;
-  line-height: 1.35rem; }
+  font-family: 'adelle', 'Times', serif;
+  font-weight: 100;
+  line-height: 1.75rem;
+  background-color: #fff; }
 
 h1 {
   margin: 0;
   padding: 28px 0 36px 0;
   /*convert to percentage*/
   color: #f1433f;
-  font: normal normal 5em 'League Spartan', 'Helvetica', sans-serif;
-  font-style: bold;
+  font: normal normal 4em 'League Spartan', 'Helvetica', sans-serif;
+  font-weight: 800;
   text-shadow: 1.6px 2px 0px #eee, 2.6px 4px #817865;
   text-align: center;
   text-transform: uppercase;
   background: url("../images/underline_light.png") no-repeat center 75% transparent; }
 
 h2 {
-  color: #e6e0d4;
+  color: #3D4C53;
   padding: 0px;
-  font: normal normal 2em 'League Spartan', 'Helvetica', sans-serif;
-  background: url("../images/project-title-blue-bg.png") repeat-x; }
+  font: normal normal 1.75em 'freight-sans-pro', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase; }
 
 h3 {
-  height: 46px;
   color: #e6e0d4;
-  margin-left: 4px;
-  padding-left: 12px;
-  font: normal normal 1.5em 'League Spartan', 'Helvetica', sans-serif;
-  background: url("../images/project-title-blue-bg.png") repeat-x; }
+  font: normal normal 1.5em 'freight-sans-pro', sans-serif; }
 
 /* responsive media */
 img, embed, object, video {
@@ -47,10 +46,12 @@ img, embed, object, video {
 #top-header-bar {
   margin: 0;
   padding: 0;
+  position: fixed;
   width: 100%;
   height: 36px;
   background-color: #3d4c53;
-  border-bottom: 1px solid #18252c; }
+  border-bottom: 1px solid #18252c;
+  z-index: 99; }
 
 .site-width {
   margin: 0 auto;
@@ -62,7 +63,8 @@ nav {
   margin: 26px .808080808081% 4px 0;
   /*26px 0 4px 0 (divide by 990*/
   padding: 0;
-  float: right;
+  position: fixed;
+  right: 15.6%;
   z-index: 100; }
 
 nav ul {
@@ -79,8 +81,8 @@ nav ul li a {
   display: inline-block;
   text-decoration: none;
   color: #70b7ba;
-  font: normal normal 1.15em 'Roboto', 'Helvetica', sans-serif;
-  font-weight: 400;
+  font: normal normal 1.15em 'freight-sans-pro', sans-serif;
+  font-weight: 200;
   text-transform: uppercase;
   text-align: center;
   z-index: 101; }
@@ -99,7 +101,7 @@ nav ul li a:hover {
   color: white; }
 
 .seal {
-  margin: -34px 0 20px 46%;
+  margin: 0 0 20px 46%;
   position: relative;
   display: block;
   width: 155px;
@@ -109,7 +111,18 @@ nav ul li a:hover {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 960px; }
+  margin-top: 60px;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 960px;
+  background-color: #fff; }
+
+.content {
+  /*margin: 120px 0;
+  padding: 20px;*/
+  background-color: #fff;
+  width: 100%;
+  height: 100%; }
 
 .articles ul {
   list-style: none; }
@@ -130,19 +143,20 @@ nav ul li a:hover {
   background-color: #f1433f; }
 
 .toc-title {
-  font: 1.5rem 'Roboto', 'Helvetica', sans-serif;
+  font: 1.5rem 'Lora', 'Helvetica', sans-serif;
   font-weight: 300;
   text-transform: uppercase; }
 
-.post-meta {
-  font-family: 'Lora', 'Georgia', serif;
+.toc-meta {
+  font-family: 'freight-sans-pro', sans-serif;
   font-size: .5em;
   padding: 0 0 6px 8px;
+  font-weight: 300;
   text-transform: none; }
 
 /*--------------------------------------------------------
 
-						Article
+						Posts
 
 ----------------------------------------------------------*/
 .full-bg {
@@ -150,15 +164,52 @@ nav ul li a:hover {
   margin: 0 auto;
   max-width: 100%; }
 
+.post-banner {
+  position: fixed;
+  margin-top: -153px;
+  overflow: hidden;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  z-index: -1; }
+
 .post-content {
   margin: 0 auto;
-  max-width: 960px; }
+  width: 66%; }
 
 .main {
   /*background-image: url('../images/epiphany-bg.jpg') no-repeat;
   background-position: bottom left;*/
   position: fixed;
   background-color: #00ff00; }
+
+.meta {
+  margin: 0 auto;
+  padding: 20px;
+  display: inline-block;
+  float: left;
+  width: 10%;
+  max-width: 33%;
+  text-align: center; }
+
+.avatar-small {
+  margin: 0 auto;
+  max-width: 80px;
+  border-radius: 10% 10% 0 0; }
+
+.post-author {
+  display: block;
+  /*margin-top: -9px;*/
+  font-size: .85rem;
+  font-family: 'freight-sans-pro', sans-serif;
+  border-top: 1px #333 solid; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 /*--------------------------------------------------------
 
