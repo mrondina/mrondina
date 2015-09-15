@@ -1,8 +1,33 @@
+
 {% include header.html %}
+{% assign author = site.authors[page.author] %}
+<div class="post-banner" {% if page.banner-image %}
+							style="background-image:url({{ page.banner-image }})"
+						{% endif %} >
+	<!-- {% if page.banner-image %}
+		<img src="{{ page.banner-image }}" />
+	{% endif %} -->
+	
+</div>
+
 <h1 class="post-title">
 	{% if page.title %}
 		{{ page.title }}
 	{% endif %}
 </h1>
-<div class="post-content">{{ content }}</div>
+<section class="content full-bg">
+<div class="wrapper">
+
+	<div class="meta">
+		<!-- <img class="avatar-small" src="{{ author.profile-image }}" alt=""/> -->
+		<!-- <span class="post-author">{{ author.display_name }} <br> {{ page.date | date_to_string }}</span> -->
+		<span class="post-date-month">{{ page.date | date: "%b" }}</span>
+		<span class="post-date-day">{{ page.date | date: "%d" }}</span>
+		<span class="post-date-year">{{ page.date | date: "%Y" }}</span>
+
+	</div>
+
+	<div class="post-content">{{ content }}</div>
+</div>
+</section>
 {% include footer.html %}

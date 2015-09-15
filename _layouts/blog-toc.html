@@ -5,7 +5,7 @@
 						{% endif %} >
 	<!-- img src={{ site.posts.first.feature-image }}> -->
 	<div class="feature-info">
-		<h1>{{ site.posts.first.title }}</h1>
+		<h1><a href= {{site.posts.first.url}} >{{ site.posts.first.title }}</a></h1>
 		<p class="feature-excerpt">{{ site.posts.first.excerpt }}</p>
 		<span class="feature-date">{{ site.posts.first.date | date: "%B %-d, %Y" }}</span>
 	</div>
