@@ -6,7 +6,7 @@
 	<!-- img src={{ site.posts.first.feature-image }}> -->
 	<div class="feature-info">
 		<h1><a href= {{site.posts.first.url}} >{{ site.posts.first.title }}</a></h1>
-		<p class="feature-excerpt">{{ site.posts.first.excerpt }}</p>
+		<span class="feature-excerpt">{{ site.posts.first.excerpt }} </span><span class="read-more"><a href= {{site.posts.first.url}} >...READ MORE</a></span>
 		<span class="feature-date">{{ site.posts.first.date | date: "%B %-d, %Y" }}</span>
 	</div>
 </div>
