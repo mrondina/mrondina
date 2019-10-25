@@ -3,7 +3,7 @@ description: "Idea Space by Mark Rondina"
 
 url: "http://markrondina.com"
 paginate: 10
-markdown: rdiscount
+markdown: kramdown
 permalink: posts/:categories/:year/:month/:day/:title/
 pygments: true
 auto: true
