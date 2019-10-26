@@ -1,39 +1,32 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset=utf-8 />
-		<title>{%if page.title %} {{page.title}} | {% endif %} Ideaspace </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="description" content="{{ site.description }}">
-		<link rel='stylesheet' type='text/css' href="{{ site.url }}/css/html-dr-reset.css">
-		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic'>
-		<link rel='stylesheet' type='text/css' href="{{ site.url }}/css/style.css">
-		<script src="//use.typekit.net/xys4fvq.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
+<header class="header">
 
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-		</head>
-	<body>
-	<div id="top-header-bar"></div>
-	<header class="site-width">
-	<!--<div id="width" class="responsive"><p></p></div>-->
-	<nav>
-		<ul>
-			<li><a href="http://markrondina.com/portfolio">Portfolio</a></li>
-			<li><a href="#">About</a></li>
-			<li class="active_page"><a href="http://markrondina.com">Blog</a></li>
-		</ul>
-	</nav>
-	
-	<div id="myLogo" class="seal">
-		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 297.3 150.2" xml:space="preserve" enable-background="new 0 0 297.3 150.2">
-  			<path id="m" d="M126.8 149.4h-21V64.3c0-23.1-18.2-42.4-40.7-42.4 -23.2 0-42.6 14.5-43.1 47.7v79.8H1V29.4C1 20.8 1 6.6 22 6.6l0 0v17.9C31 5.4 51.7 1.1 65.1 1.1 81.2 1.1 94.2 5 103.7 14c6.7 6.4 17.3 7.8 24.1 1.4C141.4 2.6 158.5 1 169.5 1c35.7 0 62.4 23.5 62.1 63.3v85.1h-21V64.3c0.2-24-18.6-42.5-41.1-42.5 -23.1 0-43.2 18.4-42.7 42.6V149.4z"/>
-  			<path id="tear" class="drop" d="M264.9 7.2L264.9 7.2l-22.2 3.3c-2.9 0.4-4.7 3.3-3.9 6.1 0 0 3.3 12.6 6.5 21.4s0 0 0 0c3.5 15.6 20.5 24.7 36 17.6 9-4.1 15-13.5 14.8-23.4C295.9 15.3 280.5 3.8 264.9 7.2z"/>
-		</svg>
+	<div class="wrap">
+
+		{% if site.data.settings.header_settings.logo_image %}
+		<a href="{{ site.baseurl }}/" class="header__logo">
+			<img src="{{ site.data.settings.header_settings.logo_image }}" class="header__logo__img">
+		</a>
+		{% else %}
+		<a href="{{ site.baseurl }}/" class="header__title">
+			{{ site.data.settings.basic_settings.site_title }}
+		</a>
+		{% endif %}
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					{% for item in site.data.settings.menu_settings.menu_items %}
+					<li class="menu__list__item">
+						<a href="{{ item.url | relative_url }}" class="menu__list__item__link">{{ item.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
 
 	</div>
-	</header>
+
+</header>

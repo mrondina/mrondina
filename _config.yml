@@ -1,18 +1,57 @@
-name: "Mark Rondina"
-description: "Idea Space by Mark Rondina"
+site: Duet Jekyll Theme
 
-url: "http://markrondina.com"
-paginate: 10
-markdown: rdiscount
-permalink: posts/:categories/:year/:month/:day/:title/
-pygments: true
-auto: true
-authors:
-  Mark:
-    display_name: Mark Rondina
-    profile-image: https://s.gravatar.com/avatar/48f5bbc2752b434e2b6d0ec263da193e?s=200
-    email: mark@rondina.net
-    web: http://www.markrondina.com/
-    twitter: mrondina
-    github: mrondina
-theme: jekyll-theme-cayman
+url: 
+baseurl: 
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+  
