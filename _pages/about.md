@@ -7,25 +7,25 @@ featured_image: /images/about-banner.jpg
 
 ![](/images/about-banner.jpg)
 
-## Features
+### My Interests
 
-We've packed Duet full of powerful features to help showcase your work:
+- First and foremost, my family and promoting wonder in my children
+- Snowboarding where ever and when ever possible
+- Technology, be it physical or digital
+- Photography and film making
+- Camping and hiking
+- New projects that enable me to learn new things
+- Traveling
 
-- Beautiful, minimal design
-- Two-column masonry grid layout
-- Responsive – works perfectly on all devices
-- Portfolio post type
-- Blog with pagination
-- Sleek Ajax navigation and page transitions
-- Unique 'gallery' feature for image grids and carousels
-- Built-in contact form with Formspree integration
-- Full markdown support and code highlighting
-- Social media icons
-- Fast page rendering
-- Built with SEO best practices in mind
-- Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-- Works with GitHub Pages
-- Updated and supported by the developers
+### My Experience
+
+- Interactive design in web and mobile
+- UI design
+- Flow mapping, wireframing and app sketching
+- Video production from pre-production to final delivery
+- Strategic thinking using lean startup methodologies
+- Team building and mentoring
+- Project management
 
 ## Let's talk chief, why not?
 
