@@ -31,4 +31,4 @@ featured_image: /images/about-banner.jpg
 
 I'm always interested in an engaging conversation, transforming acquaintances into life-long friends. Drop me a message and let's chat!
 
-<a href="mailto:mrodina@gmail.com" class="button button--large">get in touch</a>
+<a href="/contact" class="button button--large">get in touch</a>
