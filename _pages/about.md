@@ -1,34 +1,34 @@
 ---
-title: About Duet
-subtitle: Duet is a beautiful Jekyll portfolio theme designed to showcase your work in style. Perfect for designers, artists, photographers and developers to use for their portfolio website.
-description: Duet is a beautiful Jekyll portfolio theme.
-featured_image: /images/demo/demo-landscape.jpg
+title: About Mark
+subtitle: I am above anything else curious about almost everything. My curiousity has led him to explore history, design, art, film & video, photography and so many other ideas and skills. The way beautiful objects and captivating experiences are designed and created is the cornerstone of my work.
+description: A jack-of-all things working in digital expereience design
+featured_image: /images/about-banner.jpg
 ---
 
-![](/images/demo/demo-landscape.jpg)
+![](/images/about-banner.jpg)
 
 ## Features
 
 We've packed Duet full of powerful features to help showcase your work:
 
-* Beautiful, minimal design
-* Two-column masonry grid layout
-* Responsive – works perfectly on all devices
-* Portfolio post type
-* Blog with pagination
-* Sleek Ajax navigation and page transitions
-* Unique 'gallery' feature for image grids and carousels
-* Built-in contact form with Formspree integration
-* Full markdown support and code highlighting
-* Social media icons
-* Fast page rendering
-* Built with SEO best practices in mind
-* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-* Works with GitHub Pages
-* Updated and supported by the developers
+- Beautiful, minimal design
+- Two-column masonry grid layout
+- Responsive – works perfectly on all devices
+- Portfolio post type
+- Blog with pagination
+- Sleek Ajax navigation and page transitions
+- Unique 'gallery' feature for image grids and carousels
+- Built-in contact form with Formspree integration
+- Full markdown support and code highlighting
+- Social media icons
+- Fast page rendering
+- Built with SEO best practices in mind
+- Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
+- Works with GitHub Pages
+- Updated and supported by the developers
 
-## Get Duet
+## Let's talk chief, why not?
 
-Duet is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
+I'm always interested in an engaging conversation, transforming acquaintances into life-long friends. Drop me a message and let's chat!
 
-<a href="https://jekyllthemes.io/theme/duet-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>
+<a href="mailto:mrodina@gmail.com" class="button button--large">get in touch</a>
