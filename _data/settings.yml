@@ -1,9 +1,9 @@
 basic_settings:
-  site_title: Mark Rondina
+  site_title: Mark Rondina Personal Portfolio
   favicon_image: /images/favicon.png
 
 header_settings:
-  logo_image:
+  logo_image: /images/logo.png
   logo_width: 200
 
 menu_settings:
