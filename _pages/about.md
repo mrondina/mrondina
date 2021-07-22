@@ -1,6 +1,6 @@
 ---
 title: About Mark
-subtitle: I am above anything else curious about almost everything. My curiousity has led him to explore history, design, art, film & video, photography and so many other ideas and skills. The way beautiful objects and captivating experiences are designed and created is the cornerstone of my work.
+subtitle: I am above anything else curious about almost everything. My curiousity has led me to explore history, design, art, film & video, photography and so many other ideas and skills. The way beautiful objects and captivating experiences are designed and created is the cornerstone of my work.
 description: A jack-of-all things working in digital expereience design
 featured_image: /images/about-banner.jpg
 ---
