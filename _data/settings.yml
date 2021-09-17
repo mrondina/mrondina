@@ -18,9 +18,7 @@ menu_settings:
 footer_settings:
   logo_image: /images/logo.png
   logo_width: 100
-  footer_tagline: The design work and process of a confessed jack of all trades
-
-grid_settings:
+  footer_tagline: The design work and process of an experienced design leader
   overlay_opacity: 0.8
   grid_spacing: 10
 
