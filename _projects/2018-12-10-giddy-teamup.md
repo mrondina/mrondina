@@ -1,12 +1,14 @@
 ---
 title: "Giddy Teamup"
-subtitle: "A new way to connect to other creatives and makers and build amazing stuff together"
-date: 2018-06-30 00:00:00
-description: A case study of the design and build of the Giddy Teamup mobile app.
-featured_image: "/images/high-five.jpg"
+subtitle: "connecting creatives and makers"
+summary: "A case study of the design and build of the Giddy Teamup mobile app."
+client: ""
+tools: "Illustrator, After Effects, Framer, Figma, LottieFiles"
+date: 2019-06-30 00:00:00
+image: "/images/teamup-banner.jpg"
 ---
 
-![](/images/teamup-banner.jpg)
+![Teamup]({{site.baseurl}}/images/teamup-banner.jpg#wide)
 
 ## Quick Synopsis
 
@@ -16,11 +18,13 @@ Giddy Teamup was a stand-alone iOS and android app that enabled browsing of a pe
 
 I designed teamup following inspiration from social and dating apps that focused solely on a person's profile and self-imagery. The shift for Teamup was the focus of a person's ideas, projects, and creative output in the profile. Instead of connecting for romantic reasons, creatives would connect for project collaborations. I wanted to facilitate the intersection of differing disciplines to foster new ideas and creative solutions.
 
-<div class="gallery" data-columns="4">
-	<img src="/images/teamup_panel-1.png">
-	<img src="/images/teamup_panel-2.png">
-	<img src="/images/teamup_panel-3.png">
-	<img src="/images/teamup_panel-4.png">
+<div class="gallery-box">
+	<div class="gallery">
+		<img src="/images/teamup_panel-1.png" loading="lazy">
+		<img src="/images/teamup_panel-2.png" loading="lazy">
+		<img src="/images/teamup_panel-3.png" loading="lazy">
+		<img src="/images/teamup_panel-4.png" loading="lazy">
+	</div>
 </div>
 
 Upon signup, the user was put into a flow that focused on their skills, interests, and active side projects. All these steps were designed to build a larger database of people, interests, skills, and needs that would allow teamup to eventually match people to those that could best help them with their projects.

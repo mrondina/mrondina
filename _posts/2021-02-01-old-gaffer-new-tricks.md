@@ -1,8 +1,11 @@
 ---
 title: "Old Gaffer - New Tricks"
+subtitle: "New studio, totally new lighting method"
+summary: "Documenting how I learned how to use my studio lights in a new way"
+client: ""
+tools: ""
 date: 2021-02-01 00:00:00
-description: Documenting how I learned how to use my studio lights in a new way
-featured_image: "/images/fabian-frey-studio-lights.jpg"
+image: "/images/fabian-frey-studio-lights.jpg"
 ---
 
 ![](/images/fabian-frey-studio-lights.jpg)

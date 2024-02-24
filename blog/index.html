@@ -1,67 +1,39 @@
 ---
 layout: default
-title: Personal Writings
-description: Documenting my in-process work and formal musings
-featured_image: /images/social.jpg
+title: Blog
+description: Simpler blog features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!
+image: /images/18.jpg
 ---
 
-<section class="intro">
-
-	<div class="wrap">
-
-		<h1>What I've been up to</h1>
-		<p>the formal musings of a curious designer</p>
-
-	</div>
-
-</section>
-
-<section class="blog">
-
-	<div class="content-wrap blog-wrap">
-
-		{% for post in paginator.posts %}
-
-		<article class="blog-post">
-
-			<a class="blog-post__link" href="{{ post.url | relative_url }}">
-
-				<div class="blog-post__image">
-					<img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
-				</div>
-
-				<div class="blog-post__content">
-					<div class="blog-post__info">
-						<h2 class="blog-post__title">{{ post.title }}</h2>
-						<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</article>
-
-		{% endfor %}
-
-	</div>
-
-</section>
-
-{% if paginator.total_pages > 1 %}
-
-<section class="pagination">
-
-	<div class="wrap">
-
-		{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--light pagination__prev"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
-		{% endif %}
-		{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path | relative_url }}" class="button button--light pagination__next"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-		{% endif %}
-
-	</div>
-
-</section>
-
+{% if page.image %}
+<!-- begin hero image -->
+<div class="hero__image">
+  <div class="hero__image__inner">
+    <img class="lazy" data-src="{{page.image}}" alt="{{site.data.settings.title}}">
+  </div>
+</div>
+<!-- end hero image -->
 {% endif %}
+
+<!-- begin page-wrapper -->
+<div class="page-wrapper">
+  <div class="container">
+    <div class="page-wrapper__info">
+      <h1 class="page-info__title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.blog__settings.blog__title }}{% endif %}</h1>
+      {% if page.description %}
+        <p class="page-info__description">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      {% if site.posts.size > 0 %}
+        {% for post in site.posts offset:0 %}
+          {% include article.html %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+<!-- end page-wrapper -->

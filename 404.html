@@ -1,22 +1,16 @@
 ---
-layout: default
-title: Page Not Found
-description: Sorry – the page your looking for doesn't exist.
-featured_image: /images/social.jpg
+layout: page
+permalink: /404.html
 ---
 
-<section class="single">
-  <h1>Whoops. This wasn't supposed to happen :(</h1>
-  <div class="gallery" data-columns="3">
-    <img src="/images/4-1.jpg" />
-    <img src="/images/0.jpg" />
-    <img src="/images/4-2.jpg" />
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <div class="error">
+        <h2 class="error__title">404</h2>
+        <p class="error__text">The requested page could not be found.</p>
+        <a href="{{site.baseurl}}/" class="button">Back to the blog</a>
+      </div>
+    </div>
   </div>
-  <p class="hero__text editable">
-    Sorry – the page your looking for doesn't exist.
-  </p>
-  <p class="hero__text editable">
-    You might made a mistake in the address, or I've moved something.
-  </p>
-  <p><a href="/" class="button button--large">back to home</a></p>
-</section>
+</div>

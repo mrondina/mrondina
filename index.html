@@ -1,48 +1,14 @@
 ---
 layout: default
-title: Mark Rondina's personal portfolio
-description: The work and writings of a chronically curious interactive design director and self confessed jack of all trades.
-featured_image: /images/social.jpg
+image: '/images/01.jpg'
 ---
 
-<section class="intro">
+{% include section-hero.html %}
 
-	<div class="wrap">
+{% include section-projects.html %}
 
-		<h1>The personal work & writings of Mark Rondina</h1>
-		
+{% include section-testimonials.html %}
 
-	</div>
+{% include section-blog.html %}
 
-</section>
-
-<section class="portfolio">
-
-	<div class="content-wrap portfolio-wrap">
-
-		{% for project in site.projects reversed %}
-
-		<div class="portfolio-item">
-
-			<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
-
-				<div class="portfolio-item__image">
-					<img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
-				</div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ project.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		{% endfor %}
-
-	</div>
-
-</section>
+{% include section-tags.html %}

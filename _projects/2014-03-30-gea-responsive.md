@@ -1,12 +1,12 @@
 ---
 title: "GE Appliances Responsive Redesign"
-subtitle: "A case study of rebuilding a major desktop-only site into a multi-device portfolio of sites and resources"
+subtitle: "multi-device remake of a legacy website"
+summary: "A case study of rebuilding a major desktop-only site into a multi-device portfolio of sites and resources"
+client: ""
+tools: "Photoshop, Sketch, Agile Design Sprints, User Research"
 date: 2014-03-30 00:00:00
-description: A case study of redesigning GE Appliances' desktop and mobile sites
-featured_image: "/images/responsive-GEA-landscape.jpg"
+image: "/images/responsive-GEA-landscape.jpg"
 ---
-
-![](/images/responsive-GEA-landscape.jpg)
 
 ## Business Objective
 
