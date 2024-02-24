@@ -8,9 +8,6 @@ date: 2019-06-30 00:00:00
 image: "/images/teamup-banner.jpg"
 ---
 
-![Teamup]({{site.baseurl}}/images/teamup-banner.jpg#wide)
-
-## Quick Synopsis
 
 Giddy Teamup was a stand-alone iOS and android app that enabled browsing of a person's profile and a quick method of connecting on a project or idea. It was created as a proof of concept in anticipation of launching a more personalized experience for the Giddy community members.
 
