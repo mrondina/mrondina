@@ -1,8 +1,11 @@
 ---
 title: "Thoughts on blendconf"
+subtitle: "A new conference mixing web and design disciplines into a harmonious whole"
+summary: ""
+client: ""
+tools: ""
 date: 2013-09-23 00:00:00
-description: A new conference mixing web and design disciplines into a harmonious whole
-featured_image: "/images/blend-conference-banner.jpg"
+image: "/images/blend-conference-banner.jpg"
 ---
 
 ![](/images/blend-conference-logo.png)

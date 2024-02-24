@@ -1,7 +1,22 @@
-site: Mark Rondina's personal portfolio
+---
+#-------------------------------
+# General Site Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://markrondina.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-url: https://markrondina.com
-baseurl:
+#-------------------------------
+# Build Settings
+markdown: kramdown
+permalink: /:title
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: "/page/:num"
+
+#-------------------------------
+# Collections
 collections:
   pages:
     output: true
@@ -13,6 +28,7 @@ collections:
     output: true
     permalink: /project/:slug
 
+# Pages Path
 defaults:
   - scope:
       path: ""
@@ -34,19 +50,6 @@ defaults:
     values:
       layout: "project"
 
-markdown: kramdown
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
 sass:
+  sass_dir: _sass
   style: compressed
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-paginate: 6
-paginate_path: "/blog/page:num/"
-
