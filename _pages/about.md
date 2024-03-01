@@ -1,8 +1,10 @@
 ---
+layout: page
 title: About Mark
+permalink: /about/
 subtitle: I am above anything else curious about almost everything. My curiousity has led me to explore history, design, art, film & video, photography and so many other ideas and skills. The way beautiful objects and captivating experiences are designed and created is the cornerstone of my work.
 description: Practical visionary and experienced leader and mentor of creative and product teams focused on building new digital platforms and setting strategy for existing digital experiences.
-featured_image: /images/about-banner.jpg
+image: /images/about-banner.jpg
 ---
 
 ![](/images/about-banner.jpg)
