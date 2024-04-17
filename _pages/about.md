@@ -2,7 +2,7 @@
 layout: page
 title: About Mark
 permalink: /about/
-description: Practical visionary and experienced leader and mentor of creative and product teams focused on building new digital platforms and setting strategy for existing digital experiences.
+description: Practical visionary and experienced leader and mentor of design and product teams focused on building new digital platforms and setting strategy for existing digital experiences.
 image: /images/about-banner.jpg
 ---
 
@@ -11,7 +11,7 @@ image: /images/about-banner.jpg
 ### My Interests
 
 - First and foremost, my family and promoting curiosity and wonder in my children
-- Snowboarding and chasing that deep powder feeling whenver I can
+- Snowboarding and chasing that deep powder feeling
 - Technology, be it physical or digital
 - Photography and film making
 - Camping and hiking
@@ -26,7 +26,7 @@ image: /images/about-banner.jpg
 - Video production from pre-production to final delivery
 - Strategic thinking using lean startup methodologies
 - Team building and mentoring
-- Project management
+- Product management for big data
 
 ## Let's talk!
 
