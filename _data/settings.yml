@@ -45,7 +45,7 @@ social:
 hero:
   enable: true
   hero_title: Mark Rondina <br/><span><i>Product & Design Leader</i></span> # Add the "span" tag to highlight text.
-  hero_description: I’m Mark, an experience design and product leader based in the Midwest. I seek to build and transform teams to realize customer-centered design that solve real problemss.
+  hero_description: I’m Mark, an experience design and product leader with over 15 years of experience. I seek to build and transform teams to realize customer-centered design that solve real problemss.
   hero_image: "/images/knoll-4.png"
   hero_button_contact: Get In Touch
   hero_button_about: About Me
