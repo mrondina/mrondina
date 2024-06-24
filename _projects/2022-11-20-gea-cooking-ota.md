@@ -60,3 +60,5 @@ The research was conducted with 10 people, 60% male and 40% female. The outcomes
 The final release of steak mode was launched and delivered via OTA update to over 15,000 units, starting first with the touchscreen enabled products and then staggering a release to over 100,000 units via mobile app. The response of the update was overwhelmingly positive, delivering a strong marketing lift during the July sales cycle. The feature received strong reviews from product owners and became a featured cooking mode on all the cooking product pages.
 
 This release was followed in the next quarter (Q3) timed to launch just a couple of weeks before Thanksgiving in the United States. While a different mode than steak mode, this followed a very similar development cycle that we were able to repeat over the course of the releases. These connected cooking modes have become a central selling point for all the premiere cooking products for GE Profile and Cafe ranges and wall ovens.
+
+<p><iframe src="https://www.youtube.com/embed/KjOwFZQX-Uk?si=bYkZmtvedpIAGoEy" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
