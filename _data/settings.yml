@@ -60,20 +60,20 @@ section_testimonial_title: Recommendations
 
 testimonial_items:
   - name: "Ketaki Rao"
-    image: "https://media.licdn.com/dms/image/C5603AQHANdWjGfLlDw/profile-displayphoto-shrink_400_400/0/1584127846221?e=1714003200&v=beta&t=XJooFmczAMRgbet3VVHHmCcPdjwo_n_K02PRXQqWMAI"
-    designation: "Chief Product Officer"
+    image: "/images/ketaki-profile.jpeg"
+    designation: "Chief Product Officer - data.ai"
     link: "https://www.linkedin.com/in/ketakirao/"
     content: "Within a year of joining, he up-leveled these teams with new processes, improved communications, and a higher bar for excellence. And achieved the highest morale we have ever had in the team through his own brand of purpose-driven leadership. Under his leadership, we evolved data.ai to the best, the #1, in user experience."
 
   - name: "Wendy Brown"
-    image: "https://media.licdn.com/dms/image/C5603AQENe7dgm-TCOw/profile-displayphoto-shrink_800_800/0/1516343237813?e=1714003200&v=beta&t=fnfOWC9_QFerFwyP-kwmkMxQdyqrdZbI5D5wsOrK5kw"
-    designation: "Sr Marketing Executive"
+    image: "/images/wendy-profile.jpeg"
+    designation: "Sr Marketing Executive - GE"
     link: "https://www.linkedin.com/in/wendy-brown-210b747/"
     content: "Mark was an excellent leader of the Digital Design and UX team. He is a true visionary who is not afraid to take on a challenge and can be counted on for his creativity and passion to drive continuous improvements or change when necessary. He was also dedicated to redefining the customer experience as well as growing and developing his team."
 
   - name: "Taylor Dawson"
-    image: "/images/taylor-1.png"
-    designation: "Principal Product Manager"
+    image: "/images/taylor-profile.jpeg"
+    designation: "Principal Product Manager - Amazon"
     link: "https://www.linkedin.com/in/j-taylor-dawson/"
     content: "Mark is first and foremost an excellent UX director. With several high-impact projects under his belt (ranging from consumer-facing corporate websites to fast growing native mobile apps...just look at his profile), Mark has a broad range of experience to draw upon."
 
