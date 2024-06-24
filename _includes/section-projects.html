@@ -17,7 +17,7 @@
 
           <div class="row">
             {% assign sorted = site.projects | sort: 'date' | reverse %}
-            {% for project in sorted limit:6 %}
+            {% for project in sorted limit:9 %}
             <article class="project col col-4 col-w-6 col-t-12">
               <div class="project__content">
                 {% if project.image %}
