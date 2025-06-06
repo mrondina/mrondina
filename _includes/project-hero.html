@@ -1,6 +1,10 @@
 <div class="project__hero__image">
   <div class="project__hero__image__inner">
-    <img src="{{ site.baseurl }}{{ page.hero_image }}" alt="{{ page.title }}">
+    {% if page.hero_image %}
+        <img src="{{ site.baseurl }}{{ page.hero_image }}" alt="{{ page.title }}">
+    {% elsif page.image %}
+        <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}">
+    {% endif %}
   </div>
 </div>
 <div class="project__hero__inner">
