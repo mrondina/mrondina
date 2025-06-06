@@ -1,0 +1,11 @@
+<div class="project__hero__image">
+  <div class="project__hero__image__inner">
+    <img src="{{ site.baseurl }}{{ page.hero_image }}" alt="{{ page.title }}">
+  </div>
+</div>
+<div class="project__hero__inner">
+  <h1 class="project__hero__title">{{ page.title }}</h1>
+  {% if page.subtitle %}
+    <p class="project__hero__description">{{ page.summary }}</p>
+  {% endif %}
+</div>

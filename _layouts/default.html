@@ -19,7 +19,14 @@
     <!-- end hero image -->
     {% endif %}
 
+   
   {% include header.html %}
+
+   {% if page.layout == 'project' %}
+    <div class="project-hero-wrapper">
+      {% include project-hero.html %}
+    </div>
+  {% endif %}
 
   <!-- begin content -->
   <main class="content" aria-label="Content">

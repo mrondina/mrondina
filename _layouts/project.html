@@ -3,20 +3,8 @@ layout: default
 ---
 
 <div class="container">
-
-  <div class="project-info">
-    {% if page.subtitle %}
-    <p class="project-info__subtitle">{{ page.subtitle }}</p>
-    {% endif %}
-    <h1 class="project-info__title">{{ page.title }}</h1>
-  </div>
-
-  {% if page.image %}
-  <div class="project-info-image">
-    <img class="lazy" data-src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
-  </div>
-  {% endif %}
-
+    <!-- ...rest of your content... -->
+  
   <div class="row">
     <div class="project-left col col-7 col-d-12">
       <div class="project-content">
@@ -43,7 +31,7 @@ layout: default
     <div class="project-right col col-5 col-d-12">
       <aside class="sidebar">
         {% include sidebar-widgets/widget-project-meta.html %}
-        {% include sidebar-widgets/widget-recent-projects.html %}
+       
       </aside>
     </div>
 
