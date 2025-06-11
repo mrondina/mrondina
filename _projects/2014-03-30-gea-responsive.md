@@ -3,7 +3,8 @@ title: "GE Appliances Responsive Redesign"
 subtitle: "multi-device remake of a legacy website"
 summary: "A case study of rebuilding a major desktop-only site into a multi-device portfolio of sites and resources"
 client: ""
-tools: "Photoshop, Sketch, Agile Design Sprints, User Research"
+tools: "Photoshop, Sketch, Agile Design Sprints, Browserstack"
+skills: "Agile Design Sprints, Design Systems, UX Strategy"
 date: 2014-03-30 00:00:00
 image: "/images/responsive-GEA-landscape.jpg"
 ---

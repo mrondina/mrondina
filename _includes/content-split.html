@@ -1,0 +1,13 @@
+<div class="content-split">
+  <div class="content-split__text">
+    {{ include.content | markdownify }}
+  </div>
+  
+  <div class="content-split__media">
+    {% if include.media_type == "insight-cards" %}
+      {% include insight-cards.html insights=include.insights %}
+    {% else %}
+      <img src="{{ include.media_url }}" alt="{{ include.media_alt }}">
+    {% endif %}
+  </div>
+</div>

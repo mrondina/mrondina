@@ -11,12 +11,19 @@
   </div> 
   -->
   {% endif %}
-  {% if page.tools %}
+  {% if page.skills %}
   <div class="project-meta__item">
-    <h3 class="project-meta__name">Skills & Tools</h3>
-    <div class="project-meta__text">{{ page.tools }}</div>
+    <h3 class="project-meta__name">Skills</h3>
+    <div class="project-meta__text">{{ page.skills }}</div>
   </div>
   {% endif %}
+  {% if page.tools %}
+  <div class="project-meta__item">
+    <h3 class="project-meta__name">Tools</h3>
+    <div class="project-meta__text">{{ page.tools }}</div>
+  </div>
+
+{% endif %}
   {% if page.date %}
   <div class="project-meta__item">
     <h3 class="project-meta__name">Date</h3>

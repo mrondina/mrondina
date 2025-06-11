@@ -3,7 +3,8 @@ title: "GE Appliances Connected Cooking Modes"
 subtitle: "new methods of cooking delivered via cloud"
 summary: "A case study of the research, ideation, strategy and execution of GE Appliances connected cooking modes"
 client: ""
-tools: "Product Strategy, UX Research, IoT, Design Leadership"
+skills: "Product Strategy, UX Research, IoT, Design Leadership"
+tools: "Sketch, Figma, Adobe After Effects"
 date: 2022-11-20 00:00:00
 image: "/images/gea-connected-cooking-header.png"
 ---

@@ -1,0 +1,25 @@
+<div class="carousel">
+  <div class="carousel__container">
+    <button class="carousel__button carousel__button--prev" aria-label="Previous">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none">
+        <path d="M15 6l-6 6l6 6"/>
+      </svg>
+    </button>
+
+    <div class="carousel__track-container">
+      <ul class="carousel__track">
+        {% for image in include.images %}
+        <li class="carousel__slide">
+          <img src="{{ image.url }}" alt="{{ image.alt }}" class="carousel__image">
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <button class="carousel__button carousel__button--next" aria-label="Next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none">
+        <path d="M9 6l6 6l-6 6"/>
+      </svg>
+    </button>
+  </div>
+</div>
