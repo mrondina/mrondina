@@ -3,6 +3,7 @@ title: "Giddy Teamup"
 subtitle: "connecting creatives and makers"
 summary: "A case study of the design and build of the Giddy Teamup mobile app."
 client: ""
+skill: "Growth Hacking, Product Strategy, Community Building, Social Media Marketing"
 tools: "Illustrator, After Effects, Framer, Figma, LottieFiles"
 date: 2019-06-30 00:00:00
 image: "/images/teamup-banner.jpg"

@@ -1,0 +1,103 @@
+.carousel {
+  position: relative;
+  margin: 2rem 0;
+  width: $container-base-width;
+
+@media (max-width: $desktop) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+
+.carousel__container {
+  position: relative;
+  border-radius: 24px;
+  height: 648px;
+  width: $container-base-width;
+  background: var(--background-alt-color);
+  overflow: hidden;
+  @media (max-width: $wide) {
+    width: 1000px;
+  }
+
+  @media (max-width: $desktop) {
+    width: 740px;
+    height: 540px;
+    border-radius: 18px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 560px;
+    height: 400px;
+    border-radius: 16px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 480px;
+    height: 320px;
+  }
+
+}
+
+.carousel__track-container {
+  height: 100%;
+}
+
+.carousel__track {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+}
+
+.carousel__slide {
+  flex: 0 0 95%; // Larger main slide
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+   
+}
+
+.carousel__image {
+  width: 96%;
+  height: 96%;
+  object-fit: contain;
+
+  @media (max-width: $mobile) {
+    padding: 12px;
+  }
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  background: var(--background-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  
+  &:hover {
+    opacity: 1;
+    background: var(--primary-color);
+    color: var(--white);
+  }
+  
+  &--prev { left: 1rem; }
+  &--next { right: 1rem; }
+}

@@ -168,4 +168,43 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+
+  /* Carousel
+   ==================================================== */
+   /* Carousel
+   ==================================================== */
+  const carousel = document.querySelector('.carousel');
+if (carousel) {
+  const track = carousel.querySelector('.carousel__track');
+  const slides = Array.from(track.children);
+  const nextButton = carousel.querySelector('.carousel__button--next');
+  const prevButton = carousel.querySelector('.carousel__button--prev');
+
+  // Position slides next to each other
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  slides.forEach((slide, index) => {
+    slide.style.left = `${slideWidth * index}px`;
+  });
+
+  let currentIndex = 0;
+
+  const moveToSlide = (index) => {
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
+    currentIndex = index;
+  };
+
+  nextButton.addEventListener('click', () => {
+    if (currentIndex < slides.length - 1) {
+      moveToSlide(currentIndex + 1);
+    }
+  });
+
+  prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      moveToSlide(currentIndex - 1);
+    }
+  });
+}
+
+
 });

@@ -1,0 +1,110 @@
+<div class="cards-container" id="cardsContainer">
+  {% for insight in include.insights %}
+  <div class="insight-card" data-index="{{ forloop.index0 }}">
+    <div class="card-content">
+      <div>
+        <div class="insight-badge">INSIGHT</div>
+        <blockquote class="quote">"{{ insight.quote }}"</blockquote>
+        <cite class="attribution">— {{ insight.title }}</cite>
+      </div>
+      <div class="card-footer">
+        <div class="card-number">{{ forloop.index | prepend: '0' }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <button class="nav-arrow left" id="prevBtn">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+  
+  <button class="nav-arrow right" id="nextBtn">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+  
+  <div class="card-counter" id="cardCounter">1 of {{ include.insights.size }}</div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('cardsContainer');
+    if (!container) return;
+
+    let activeCard = 0;
+    const cards = container.querySelectorAll('.insight-card');
+    if (!cards.length) return;
+
+    function updateCardPositions() {
+      cards.forEach((card, index) => {
+        const relativeIndex = (index - activeCard + cards.length) % cards.length;
+        const style = getCardStyle(relativeIndex);
+        
+        card.style.transform = style.transform;
+        card.style.zIndex = style.zIndex;
+        card.style.opacity = style.opacity;
+      });
+      
+      container.querySelector('#cardCounter').textContent = `${activeCard + 1} of ${cards.length}`;
+    }
+
+    function getCardStyle(relativeIndex) {
+      if (relativeIndex === 0) {
+        return {
+          transform: 'translate(0, 0) rotate(0deg)',
+          zIndex: 10,
+          opacity: 1
+        };
+      }
+       // Adjust offset and rotation based on viewport width
+        const isMobile = window.innerWidth <= 576; // mobile breakpoint
+        const isTablet = window.innerWidth <= 768; // tablet breakpoint
+        const isDesktop = window.innerWidth <= 1000; // tablet breakpoint
+
+        let offset, rotation;
+
+        if (isMobile) {
+            // For mobile, use smaller offsets and rotations
+            offset = relativeIndex * 12;
+            rotation = relativeIndex * 3;
+        } else if (isTablet) {
+            // For tablet, use moderate offsets and rotations
+            offset = relativeIndex * 12;
+            rotation = relativeIndex * 3;
+        } else if (isDesktop) {
+            // For tablet, use moderate offsets and rotations
+            offset = relativeIndex * 16;
+            rotation = relativeIndex * 4;
+        } else {
+            // For desktop, use larger offsets and rotations
+            offset = relativeIndex * 24;
+            rotation = relativeIndex * 5;
+}
+
+      return {
+        transform: `translate(${offset}px, ${offset}px) rotate(${rotation}deg)`,
+        zIndex: 10 - relativeIndex,
+        opacity: Math.max(0.5, 1 - relativeIndex * 0.2)
+      };
+    }
+    // Add resize listener to update cards when viewport changes
+    window.addEventListener('resize', updateCardPositions);
+    // Navigation
+    container.querySelector('#prevBtn').addEventListener('click', () => {
+      activeCard = (activeCard - 1 + cards.length) % cards.length;
+      updateCardPositions();
+    });
+
+    container.querySelector('#nextBtn').addEventListener('click', () => {
+      activeCard = (activeCard + 1) % cards.length;
+      updateCardPositions();
+    });
+
+    // Initialize
+    updateCardPositions();
+  });
+  
+</script>
