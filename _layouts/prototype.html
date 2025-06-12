@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="container">
+  <!-- Back to case study link -->
+  <div class="prototype-back-link">
+    {% if page.back_to_project %}
+    <a href="{{ page.back_to_project.url }}" class="button button--secondary">
+      ← {{ page.back_to_project.title }}
+    </a>
+    {% endif %}
+  </div>
+
+  <!-- Page title -->
+  <div class="prototype-header">
+    <h1 class="prototype-title">{{ page.title | escape }}</h1>
+    {% if page.description %}
+    <p class="prototype-description">{{ page.description }}</p>
+    {% endif %}
+  </div>
+
+  <!-- Figma embed from front matter -->
+  {% if page.figma_embed %}
+  <div class="prototype-embed">
+    {{ page.figma_embed }}
+  </div>
+  {% endif %}
+
+  <!-- Any additional content -->
+  <div class="prototype-content">
+    {{ content }}
+  </div>
+</div>

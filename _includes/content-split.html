@@ -1,6 +1,9 @@
-<div class="content-split">
-  <div class="content-split__text">
-    {{ include.content | markdownify }}
+{% assign image_pos = include.image_position | default: "right" %}
+{% assign text_align = include.text_align | default: "left" %}
+
+<div class="content-split content-split--image-{{ image_pos }}">
+  <div class="content-split__text content-split__text--{{ text_align }}">
+    {{ include.content | strip | markdownify }}
   </div>
   
   <div class="content-split__media">
