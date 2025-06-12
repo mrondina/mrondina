@@ -1,0 +1,54 @@
+<div class="project-team">
+  <div class="team-container">
+    <div class="team-content">
+      {% if include.stakeholders %}
+      <div class="team-section">
+        <h3>Key Stakeholders</h3>
+        <div class="stakeholders-grid">
+          {% for stakeholder in include.stakeholders %}
+          <div class="stakeholder">
+            {% if stakeholder.image %}
+            <div class="avatar">
+              <img src="{{ stakeholder.image }}" alt="{{ stakeholder.name }}" loading="lazy">
+            </div>
+            {% endif %}
+            <span class="name">{{ stakeholder.name }}</span>
+            <p>{{ stakeholder.role }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if include.team %}
+      <div class="team-section">
+        <h3>Project Team</h3>
+        <div class="team-grid">
+          {% for member in include.team %}
+          <div class="team-member">
+            {% if member.image %}
+            <div class="avatar">
+              <img src="{{ member.image }}" alt="{{ member.name }}" loading="lazy">
+            </div>
+            {% endif %}
+            <span class="member-name">{{ member.name }}</span>
+            <p class="member-role">{{ member.role }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="responsibilities-section">
+      <h3>My Responsibilities</h3>
+      <ul>
+        <li>Design Leadership & Strategy</li>
+        <li>Product Vision Development</li>
+        <li>UX Research Direction</li>
+        <li>Stakeholder Management</li>
+        <li>Cross-functional Team Leadership</li>
+      </ul>
+    </div>
+  </div>
+</div>

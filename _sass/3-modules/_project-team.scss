@@ -1,0 +1,125 @@
+.project-team {
+  width: $container-base-width;
+  margin: 64px auto;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 24px;
+  
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.team-member {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .member-name {
+    font-family: $base-font-family;
+    font-size: 1.25rem;
+    font-weight: 700;
+
+  }
+  .member-role {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+    .avatar {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 24%;
+        overflow: hidden;
+        background: var(--background-alt-color);
+    
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 1 / 1;  // Ensures 1:1 ratio
+        }
+        
+        @media (max-width: $mobile) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.stakeholder {
+    text-align: center;
+  .avatar {
+    width: 240px;
+    height: 240px;
+    margin-bottom: 1rem;
+    
+    @media (max-width: $mobile) {
+      width: 160px;
+      height: 160px;
+    }
+  }
+  .name {
+    font-family: $base-font-family;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 12px 8px;
+  }
+}
+.stakeholders-grid,
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 32px;
+  text-align: center;
+  
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+.responsibilities-section {
+  background: var(--background-alt-color);
+  padding: 32px;
+  border-radius: 16px;
+  height: 80%;
+  
+  
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 16px;
+      color: var(--text-color);
+      
+      &:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+      }
+    }
+  }
+  
+  @media (max-width: $tablet) {
+    margin-top: -24px;
+  }
+}
+
+// ... rest of existing styles for stakeholder, team-member, and avatar remain the same
