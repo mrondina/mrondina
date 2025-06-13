@@ -5,9 +5,9 @@ summary: "A case study of the research ideation, strategy and execution of data.
 client: ""
 skills: "Product Strategy, UX Research, Product Design, Design Leadership"
 tools: "Figma, Amplitude, Userlytics, After Effects"
-date: 2024-04-12 00:00:00
+date: 2024-04-12
 image: "/images/creative-IQ-landing_04.jpg"
-hero_image: "/images/creative-IQ-landing_04.jpg"
+permalink: /project/creative-iq
 stakeholders:
   - name: Ted Krantz
     role: CEO
@@ -34,11 +34,12 @@ team:
     image: /images/daryll.jpg
 
 responsibilities:
-  - "Led design strategy and product vision development"
+  - "Led design strategy and product vision alignment in weekly design review sessions"
   - "Directed UX research initiatives and user testing"
-  - "Managed cross-functional team of designers and researchers"
-  - "Presented to C-suite stakeholders"
-  - "Coordinated with data science team on AI features"
+  - "Prioritization and overall design concept project tracking and cross-functional communication with product and engineering"
+  - "Communicated progress and clarification as well as design highlights with C-level team"
+  - "Coordinated with data science team and back-end team to enable new data sources for customer marketing intelligence insights"
+  - "Held design excellence check to validate design prototype aligned with overall product features defined and customer needs and the quality of design met company's high standards"
 
 carousel_images:
  - url: /images/creative-IQ-landing_05.jpg
@@ -195,7 +196,7 @@ The final design exceeded expectations. I first reviewed the final design with m
 Unfortunately, just as the engineering teams were working on the landing page design, our data collection for advertising suffered a critical outage with the advertising data reduced by 80%. The product was deprioritized until the data collection, modeling and back-end engineering teams could rebuild the ad scraping pipelines and restore the lost data.
 
 <div style="text-align: center; max-width: 400px; margin: 32px auto;">
-  <a href="../creative-iq-prototype" class="button button--big" target="_blank">
+  <a href= "{{ '/creative-iq-prototype/' | relative_url }}"  class="button button--big" target="_blank">
     Explore the Creative IQ Figma Prototype
   </a>
 </div>

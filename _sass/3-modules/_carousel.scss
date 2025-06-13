@@ -64,7 +64,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  img {
+    pointer-events: none;
+  }
    
 }
 
@@ -72,6 +74,7 @@
   width: 96%;
   height: 96%;
   object-fit: contain;
+  
 
   @media (max-width: $mobile) {
     padding: 12px;

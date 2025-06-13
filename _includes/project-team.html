@@ -43,11 +43,9 @@
     <div class="responsibilities-section">
       <h3>My Responsibilities</h3>
       <ul>
-        <li>Design Leadership & Strategy</li>
-        <li>Product Vision Development</li>
-        <li>UX Research Direction</li>
-        <li>Stakeholder Management</li>
-        <li>Cross-functional Team Leadership</li>
+        {% for responsibility in include.responsibilities %}
+        <li>{{ responsibility }}</li>
+        {% endfor %}
       </ul>
     </div>
   </div>
