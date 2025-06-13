@@ -1,22 +1,53 @@
 .project-team {
+  display: flex;
   width: $container-base-width;
   margin: 64px auto;
+  @media (max-width: $wide) {
+    /* Still use container width but ensure it doesn't overflow */
+    max-width: 1000px;
+    margin: 64px auto;
+  }
+  
+  @media (max-width: $desktop) {
+    width: 100%;
+    margin: 64px auto;
+  }
+  
+  @media (max-width: $tablet) {
+    width: 100%;
+    margin: 32px auto;
+  }
+  
 }
 
 .team-container {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  width: 100%;
+  grid-template-columns: 1.5fr 1fr;
   gap: 24px;
+  align-items: start;
   
+  @media (max-width: $wide) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  @media (max-width: $desktop) {
+    gap: 18px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
   @media (max-width: $tablet) {
+    gap: 16px;
     grid-template-columns: 1fr;
   }
+  
 }
 
 .team-content {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: clamp(20px, 4vw, 32px); /* Responsive gap */
+  min-width: 0; /* Allows content to shrink */
 }
 
 .team-member {
@@ -27,75 +58,101 @@
 
   .member-name {
     font-family: $base-font-family;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive font sizing */
     font-weight: 700;
+    margin: 8px 0 4px 0;
 
   }
   .member-role {
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 2vw, 1rem); /* Responsive font sizing */
     font-weight: 200;
+    margin: 0;
   }
     .avatar {
-        width: 120px;
-        height: 120px;
+        width: clamp(80px, 15vw, 120px);
+        height: clamp(80px, 15vw, 120px);
         margin: 0 auto;
-        border-radius: 24%;
+        border-radius: 50%;
         overflow: hidden;
         background: var(--background-alt-color);
+        flex-shrink: 0;
     
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             aspect-ratio: 1 / 1;  // Ensures 1:1 ratio
+            pointer-events: none;
         }
         
         @media (max-width: $mobile) {
-            width: 80px;
-            height: 80px;
+          width: clamp(60px, 15vw, 80px);
+          height: clamp(60px, 15vw, 80px);
         }
     }
 }
 
 .stakeholder {
     text-align: center;
+    min-width: 0;
   .avatar {
-    width: 240px;
-    height: 240px;
-    margin-bottom: 1rem;
+    width: clamp(160px, 20vw, 240px);
+    height: clamp(160px, 20vw, 240px);
+    max-width: 100%;
+    margin: 0 auto 16px auto;
+    border-radius: 24%; /* Circular for stakeholders */
+    overflow: hidden;
+    background: var(--background-alt-color);
     
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      pointer-events: none;
+    }
+
     @media (max-width: $mobile) {
-      width: 160px;
-      height: 160px;
+      width: clamp(100px, 25vw, 160px);
+      height: clamp(100px, 25vw, 160px);
     }
   }
   .name {
     font-family: $base-font-family;
-    font-size: 1.5rem;
+    font-size: clamp(1.125rem, 3vw, 1.5rem); /* Responsive font sizing */
     font-weight: 700;
     padding: 12px 8px;
+    margin: 0;
+    word-wrap: break-word; /* Prevent text overflow */
   }
 }
 .stakeholders-grid,
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 32px;
+  gap: clamp(16px, 4vw, 32px); /* Responsive gap */
   text-align: center;
+  align-items: start;
   
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 20px;
+  }
   @media (max-width: $mobile) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 16px;
   }
 }
 
 .responsibilities-section {
+  box-sizing: border-box;
   background: var(--background-alt-color);
-  padding: 32px;
+  padding: clamp(20px, 4vw, 32px); /* Responsive padding */
   border-radius: 16px;
-  height: 80%;
-  
-  
+  grid-column: 2;
+  height: auto;
+  width: 100%;
+
   
   ul {
     list-style: none;
@@ -104,8 +161,11 @@
     
     li {
       position: relative;
-      padding-left: 24px;
-      margin-bottom: 16px;
+      padding-left: clamp(20px, 3vw, 24px); /* Responsive bullet spacing */
+      margin-bottom: clamp(12px, 2vw, 16px); /* Responsive item spacing */
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
       color: var(--text-color);
       
       &:before {
@@ -116,9 +176,18 @@
       }
     }
   }
-  
+  @media (max-width: $desktop) {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
   @media (max-width: $tablet) {
-    margin-top: -24px;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  @media (max-width: $mobile) {
+    grid-column: auto;
+    grid-row: auto;
   }
 }
 
