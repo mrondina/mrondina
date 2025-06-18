@@ -1,16 +1,26 @@
 {% assign image_pos = include.image_position | default: "right" %}
 {% assign text_align = include.text_align | default: "left" %}
+{% assign mode = include.mode | default: "default" %}
 
-<div class="content-split content-split--image-{{ image_pos }}">
-  <div class="content-split__text content-split__text--{{ text_align }}">
-    {{ include.content | strip | markdownify }}
+{% if mode == "stat" %}
+  <div class="content-split content-split--stat">
+    <div class="content-split__stat-bg">
+      <div class="content-split__stat-inner">
+        {{ include.content | strip | markdownify }}
+      </div>
+    </div>
   </div>
-  
-  <div class="content-split__media">
-    {% if include.media_type == "insight-cards" %}
-      {% include insight-cards.html insights=include.insights %}
-    {% else %}
-      <img src="{{ include.media_url }}" alt="{{ include.media_alt }}">
-    {% endif %}
+{% else %}
+  <div class="content-split content-split--image-{{ image_pos }}">
+    <div class="content-split__text content-split__text--{{ text_align }}">
+      {{ include.content | strip | markdownify }}
+    </div>
+    <div class="content-split__media">
+      {% if include.media_type == "insight-cards" %}
+        {% include insight-cards.html insights=include.insights %}
+      {% else %}
+        <img src="{{ include.media_url }}" alt="{{ include.media_alt }}">
+      {% endif %}
+    </div>
   </div>
-</div>
+{% endif %}
