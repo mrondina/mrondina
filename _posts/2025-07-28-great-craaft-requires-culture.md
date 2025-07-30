@@ -4,7 +4,7 @@ subtitle: "culture is so much more than just words on a mission doc"
 summary: ""
 client: ""
 tools: ""
-date: 2025-007-28 00:00:00
+date: 2025-07-28 00:00:00
 image: "/images/design-culture-header.jpg"
 ---
 # Strong Design Culture is the Foundation of Great Craft
@@ -67,7 +67,7 @@ During those intense six months rebuilding my team, I had to consciously manage 
 
 Building design culture takes time, effort, and probably some budget too. Great design culture requires investment; not just of money, but the scarce resource of time. Design culture is also evolutionary, developing through hours of 1:1 sessions, team critiques and working collaboratively. It also requires the regular team feedback. Most importantly, it requires time spent not just working together, but spending time together sharing experiences that matter.
 
-### *reate Moments of Connection
+### Create Moments of Connection
 
 Ive's team had a powerful practice: "It's very good to make things for each other... It makes you more worried about them than you. It makes you vulnerable and it makes them grateful." They implemented this literally: "Every Friday morning I asked that one person on the design team would make breakfast for the whole team and we took it in turns."
 
